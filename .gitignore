@@ -1,0 +1,20 @@
+# Godot 4+ specific ignores
+.godot/
+.import/
+.export/
+*.import
+*.godot.tmp
+
+# Builds y exportaciones
+bin/
+export/
+android/
+ios/
+
+# Archivos del sistema y logs
+.DS_Store
+*.log
+
+# Ajustes personales del editor (no se deben compartir)
+.editor_settings-*.tres
+editor_settings.tres
