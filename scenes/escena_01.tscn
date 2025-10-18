@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bbcyottb5hnt0"]
+[gd_scene load_steps=16 format=3 uid="uid://bbcyottb5hnt0"]
 
 [ext_resource type="PackedScene" uid="uid://crsralbighf5e" path="res://scenes/player.tscn" id="1_ogd80"]
 [ext_resource type="Texture2D" uid="uid://brlunlisg28c8" path="res://resources/kenney_pixel-platformer-farm-expansion/Tilemap/tilemap.png" id="2_smpog"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bcvpu5oivgq7b" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/world_tileset.png" id="4_xvnon"]
 [ext_resource type="PackedScene" uid="uid://b4d8d5jgnnkfe" path="res://scenes/plataforma_nv_1.tscn" id="5_dgv6l"]
 [ext_resource type="PackedScene" uid="uid://dtwuuimjoii1n" path="res://scenes/manzana.tscn" id="6_10qux"]
+[ext_resource type="PackedScene" uid="uid://ry3jrkhgl8jq" path="res://scenes/zona_de_muerte.tscn" id="7_copjx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8p2wb"]
 texture = ExtResource("2_smpog")
@@ -447,6 +448,8 @@ _data = {
 "RESET": SubResource("Animation_35jds")
 }
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_kjau3"]
+
 [node name="Escena01" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -461,6 +464,8 @@ position = Vector2(-157, 32)
 [node name="Camera2D" type="Camera2D" parent="player"]
 position = Vector2(3, -13)
 zoom = Vector2(3, 3)
+limit_bottom = 126
+limit_smoothed = true
 position_smoothing_enabled = true
 
 [node name="plataformaNv1" parent="." instance=ExtResource("5_dgv6l")]
@@ -504,3 +509,9 @@ position = Vector2(1815, -14)
 
 [node name="Manzana3" parent="." instance=ExtResource("6_10qux")]
 position = Vector2(343, -47)
+
+[node name="ZonaDeMuerte" parent="." instance=ExtResource("7_copjx")]
+position = Vector2(-132, 139)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaDeMuerte"]
+shape = SubResource("WorldBoundaryShape2D_kjau3")
