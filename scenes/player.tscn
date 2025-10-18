@@ -1,9 +1,9 @@
 [gd_scene load_steps=37 format=3 uid="uid://crsralbighf5e"]
 
-[ext_resource type="Texture2D" uid="uid://c2v04powxkbaw" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/1-Idle/Idle.png" id="1_3vyb7"]
-[ext_resource type="Script" uid="uid://dm1h4jwdcg3h3" path="res://scripts/player.gd" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://dtvlxi6edgchq" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/2-Run/Run.png" id="2_g2els"]
-[ext_resource type="Texture2D" uid="uid://c0v5l4w6dp7hl" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/3-Jump/Jump.png" id="3_dqkch"]
+[ext_resource type="Texture2D" uid="uid://bwcgr4rwi634c" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/1-Idle/Idle.png" id="1_3vyb7"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="Texture2D" uid="uid://c1uwjyfs1xd1d" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/2-Run/Run.png" id="2_g2els"]
+[ext_resource type="Texture2D" uid="uid://dlrrruylfptjx" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/3-Jump/Jump.png" id="3_dqkch"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qlg0r"]
 atlas = ExtResource("1_3vyb7")
@@ -248,6 +248,7 @@ script = ExtResource("1_g2els")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_bj30b")
+animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, -13)
