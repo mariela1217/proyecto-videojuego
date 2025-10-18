@@ -1,5 +1,6 @@
 [gd_scene load_steps=37 format=3 uid="uid://crsralbighf5e"]
 
+
 [ext_resource type="Texture2D" uid="uid://bwcgr4rwi634c" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/1-Idle/Idle.png" id="1_3vyb7"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://c1uwjyfs1xd1d" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/2-Run/Run.png" id="2_g2els"]

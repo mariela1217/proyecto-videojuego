@@ -1,3 +1,4 @@
+
 [gd_scene load_steps=16 format=3 uid="uid://bbcyottb5hnt0"]
 
 [ext_resource type="PackedScene" uid="uid://crsralbighf5e" path="res://scenes/player.tscn" id="1_ogd80"]
@@ -7,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://b4d8d5jgnnkfe" path="res://scenes/plataforma_nv_1.tscn" id="5_dgv6l"]
 [ext_resource type="PackedScene" uid="uid://dtwuuimjoii1n" path="res://scenes/manzana.tscn" id="6_10qux"]
 [ext_resource type="PackedScene" uid="uid://ry3jrkhgl8jq" path="res://scenes/zona_de_muerte.tscn" id="7_copjx"]
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8p2wb"]
 texture = ExtResource("2_smpog")
@@ -410,6 +412,7 @@ sources/0 = SubResource("TileSetAtlasSource_8p2wb")
 sources/1 = SubResource("TileSetAtlasSource_lo18g")
 sources/2 = SubResource("TileSetAtlasSource_t0k0p")
 
+
 [sub_resource type="Animation" id="Animation_palkt"]
 resource_name = "Movimiento"
 length = 1.5
@@ -450,6 +453,7 @@ _data = {
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_kjau3"]
 
+
 [node name="Escena01" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -459,6 +463,7 @@ layer_0/tile_data = PackedInt32Array(-1, 131072, 2, -65536, 131072, 2, -65535, 1
 
 [node name="player" parent="." instance=ExtResource("1_ogd80")]
 z_index = 5
+
 position = Vector2(-157, 32)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
@@ -483,11 +488,16 @@ position = Vector2(828, -57)
 [node name="plataformaNv3" parent="." instance=ExtResource("5_dgv6l")]
 position = Vector2(917.02, -68)
 
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="plataformaNv3"]
+
+
 [node name="plataformaNv4" parent="." instance=ExtResource("5_dgv6l")]
 position = Vector2(1019, -68)
 
 [node name="plataformaNv5" parent="." instance=ExtResource("5_dgv6l")]
 position = Vector2(1478, 8)
+
 
 [node name="plataformaNv6" parent="." instance=ExtResource("5_dgv6l")]
 position = Vector2(1561, 8)
@@ -515,3 +525,4 @@ position = Vector2(-132, 139)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaDeMuerte"]
 shape = SubResource("WorldBoundaryShape2D_kjau3")
+
