@@ -1,9 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://bbcyottb5hnt0"]
+[gd_scene load_steps=13 format=3 uid="uid://bbcyottb5hnt0"]
 
 [ext_resource type="PackedScene" uid="uid://crsralbighf5e" path="res://scenes/player.tscn" id="1_ogd80"]
-[ext_resource type="Texture2D" uid="uid://bkq2nc3uutdta" path="res://resources/kenney_pixel-platformer-farm-expansion/Tilemap/tilemap.png" id="2_smpog"]
-[ext_resource type="Texture2D" uid="uid://cem45xp2vkkyp" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/platforms.png" id="3_wiu8i"]
-[ext_resource type="Texture2D" uid="uid://b2dbpa45knq3g" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/world_tileset.png" id="4_xvnon"]
+[ext_resource type="Texture2D" uid="uid://cueetx1nx8e8s" path="res://resources/kenney_pixel-platformer-farm-expansion/Tilemap/tilemap.png" id="2_smpog"]
+[ext_resource type="Texture2D" uid="uid://tclw37dpfyxp" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/platforms.png" id="3_wiu8i"]
+[ext_resource type="Texture2D" uid="uid://b2ydu0lgpg7yc" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/world_tileset.png" id="4_xvnon"]
 [ext_resource type="PackedScene" uid="uid://c404dmxb422d5" path="res://scenes/plataforma_nv_1.tscn" id="5_dgv6l"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8p2wb"]
@@ -408,6 +408,44 @@ sources/0 = SubResource("TileSetAtlasSource_8p2wb")
 sources/1 = SubResource("TileSetAtlasSource_lo18g")
 sources/2 = SubResource("TileSetAtlasSource_t0k0p")
 
+[sub_resource type="Animation" id="Animation_f7y23"]
+resource_name = "Movimiento"
+length = 1.5
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.4985),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(271, -28), Vector2(418, -29)]
+}
+
+[sub_resource type="Animation" id="Animation_6fs1d"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(271, -28)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7ryfg"]
+_data = {
+"Movimiento": SubResource("Animation_f7y23"),
+"RESET": SubResource("Animation_6fs1d")
+}
+
 [node name="Escena01" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -425,7 +463,13 @@ zoom = Vector2(3, 3)
 position_smoothing_enabled = true
 
 [node name="plataformaNv1" parent="." instance=ExtResource("5_dgv6l")]
-position = Vector2(338, -55)
+position = Vector2(271, -28)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="plataformaNv1"]
+libraries = {
+"": SubResource("AnimationLibrary_7ryfg")
+}
+autoplay = "Movimiento"
 
 [node name="plataformaNv2" parent="." instance=ExtResource("5_dgv6l")]
 position = Vector2(813, -52)
