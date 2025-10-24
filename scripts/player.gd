@@ -1,4 +1,5 @@
 extends CharacterBody2D
+@onready var sonido_salto: AudioStreamPlayer2D = $SonidoSalto
 
 
 const SPEED = 150.0
@@ -20,6 +21,7 @@ func _physics_process(delta: float) -> void:
 	# Handle jump.
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+		sonido_salto.play()
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
