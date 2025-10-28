@@ -1,10 +1,10 @@
 [gd_scene load_steps=38 format=3 uid="uid://crsralbighf5e"]
 
-[ext_resource type="Texture2D" uid="uid://bh0ogdego2llq" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/1-Idle/Idle.png" id="1_3vyb7"]
+[ext_resource type="Texture2D" uid="uid://c2v04powxkbaw" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/1-Idle/Idle.png" id="1_3vyb7"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://ck6n3rjbpxcrw" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/2-Run/Run.png" id="2_g2els"]
-[ext_resource type="Texture2D" uid="uid://doeglggxffq8m" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/3-Jump/Jump.png" id="3_dqkch"]
-[ext_resource type="AudioStream" uid="uid://bjoi2yk7s0e4p" path="res://resources/sounds/jump.wav" id="5_0ojqc"]
+[ext_resource type="Texture2D" uid="uid://dtvlxi6edgchq" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/2-Run/Run.png" id="2_g2els"]
+[ext_resource type="Texture2D" uid="uid://c0v5l4w6dp7hl" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/3-Jump/Jump.png" id="3_dqkch"]
+[ext_resource type="AudioStream" uid="uid://dl5xmqaw571am" path="res://resources/sounds/jump.wav" id="5_0ojqc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qlg0r"]
 atlas = ExtResource("1_3vyb7")
