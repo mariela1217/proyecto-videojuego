@@ -2,15 +2,15 @@
 
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_gtexo"]
 [ext_resource type="PackedScene" uid="uid://crsralbighf5e" path="res://scenes/player.tscn" id="1_ogd80"]
-[ext_resource type="Texture2D" uid="uid://cueetx1nx8e8s" path="res://resources/kenney_pixel-platformer-farm-expansion/Tilemap/tilemap.png" id="2_smpog"]
-[ext_resource type="Texture2D" uid="uid://tclw37dpfyxp" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/platforms.png" id="3_wiu8i"]
+[ext_resource type="Texture2D" uid="uid://cblylt67ex5yt" path="res://resources/kenney_pixel-platformer-farm-expansion/Tilemap/tilemap.png" id="2_smpog"]
+[ext_resource type="Texture2D" uid="uid://bph25xabxoflt" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/platforms.png" id="3_wiu8i"]
 [ext_resource type="PackedScene" uid="uid://co6648rf6oa84" path="res://scenes/enemigo.tscn" id="4_32x25"]
-[ext_resource type="Texture2D" uid="uid://b2ydu0lgpg7yc" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/world_tileset.png" id="4_xvnon"]
+[ext_resource type="Texture2D" uid="uid://c1hpms4ywn4kv" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/world_tileset.png" id="4_xvnon"]
 [ext_resource type="PackedScene" uid="uid://c404dmxb422d5" path="res://scenes/plataforma_nv_1.tscn" id="5_dgv6l"]
 [ext_resource type="PackedScene" uid="uid://dbeojvfbhvun1" path="res://scenes/manzana.tscn" id="6_r61a7"]
 [ext_resource type="PackedScene" uid="uid://dqeh1qipq8587" path="res://scenes/zona_de_muerte.tscn" id="7_od6io"]
-[ext_resource type="FontFile" uid="uid://bpf8kpmg67yxi" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="9_03ud0"]
-[ext_resource type="PackedScene" path="res://hud.tscn" id="9_sj5uf"]
+[ext_resource type="FontFile" uid="uid://dniwlowsb0dyj" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="9_03ud0"]
+[ext_resource type="PackedScene" uid="uid://crugayhkbi3sc" path="res://hud.tscn" id="9_sj5uf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8p2wb"]
 texture = ExtResource("2_smpog")
@@ -465,6 +465,7 @@ offset_left = 1962.0
 offset_top = -47.0
 offset_right = 2095.0
 offset_bottom = -17.0
+theme_override_colors/font_color = Color(0.145098, 0.588235, 0.745098, 1)
 theme_override_fonts/font = ExtResource("9_03ud0")
 theme_override_font_sizes/font_size = 8
 text = "Recogiste 0 Manzanas"
@@ -568,9 +569,10 @@ offset_left = -313.0
 offset_top = -54.0
 offset_right = -179.0
 offset_bottom = 9.0
+theme_override_colors/font_color = Color(0.145098, 0.588235, 0.745098, 1)
 theme_override_fonts/font = ExtResource("9_03ud0")
 theme_override_font_sizes/font_size = 8
-text = "Muevete con las flechas de direccion izquierda y derecha
+text = "Muevete con las flechas de dirección izquierda y derecha
 
 Pulsa Espacio para saltar"
 autowrap_mode = 2
@@ -580,6 +582,7 @@ offset_left = 38.0
 offset_top = -90.0
 offset_right = 203.0
 offset_bottom = -60.0
+theme_override_colors/font_color = Color(0.145098, 0.588235, 0.745098, 1)
 theme_override_fonts/font = ExtResource("9_03ud0")
 theme_override_font_sizes/font_size = 8
 text = "Ten cuidado con los secuaces de Azkar, no los toques Miklo"
@@ -590,6 +593,7 @@ offset_left = -148.0
 offset_top = -134.0
 offset_right = -19.0
 offset_bottom = -82.0
+theme_override_colors/font_color = Color(0.145098, 0.588235, 0.745098, 1)
 theme_override_fonts/font = ExtResource("9_03ud0")
 theme_override_font_sizes/font_size = 8
 text = "Recoge todas las frutas Miklo
@@ -602,6 +606,7 @@ offset_left = 282.0
 offset_top = -98.0
 offset_right = 418.0
 offset_bottom = -68.0
+theme_override_colors/font_color = Color(0.145098, 0.588235, 0.745098, 1)
 theme_override_fonts/font = ExtResource("9_03ud0")
 theme_override_font_sizes/font_size = 8
 text = "Utiliza la plataforma para evitar caer al vacio"
@@ -612,6 +617,7 @@ offset_left = 1696.0
 offset_top = -76.0
 offset_right = 1840.0
 offset_bottom = -46.0
+theme_override_colors/font_color = Color(0.145098, 0.588235, 0.745098, 1)
 theme_override_fonts/font = ExtResource("9_03ud0")
 theme_override_font_sizes/font_size = 8
 text = "Ahi esta la meta Miklo, cruza el cartel para terminar el nivel"
@@ -622,6 +628,7 @@ offset_left = 1962.0
 offset_top = -77.0
 offset_right = 2106.0
 offset_bottom = -47.0
+theme_override_colors/font_color = Color(0.145098, 0.588235, 0.745098, 1)
 theme_override_fonts/font = ExtResource("9_03ud0")
 theme_override_font_sizes/font_size = 8
 text = "Felicidades Miklo, lo has conseguido!"
