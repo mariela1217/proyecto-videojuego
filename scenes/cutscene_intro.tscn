@@ -1,0 +1,187 @@
+[gd_scene load_steps=7 format=3 uid="uid://bokx82pn5ifpp"]
+
+[ext_resource type="Script" path="res://scripts/cutscene_intro.gd" id="1_e3ycw"]
+[ext_resource type="Texture2D" uid="uid://bv4h5k2gciw8k" path="res://resources/mundoverde.png" id="2_jt24p"]
+[ext_resource type="FontFile" uid="uid://bgxaa3t3khxdy" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="3_u0ajf"]
+
+[sub_resource type="Animation" id="Animation_1vks3"]
+length = 6.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UI/Fade:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0.00392157)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("UI/Texto1:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("UI/Texto2:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("FondoMarchito:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.644345, 0.416447, 0.256943, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_oxdj7"]
+resource_name = "intro"
+length = 9.0
+step = 10.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UI/Fade:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.51777, 7.3, 7.5, 8, 9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 0.392157), Color(0, 0, 0, 1), Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("UI/Texto1:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.51766, 1.79343, 4.01746, 5.01739),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("UI/Texto2:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(5.1, 5.5, 7.5, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("FondoMarchito:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(5.1, 5.5, 7.5, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(0.644345, 0.416447, 0.256943, 0), Color(0.588235, 0.431373, 0.431373, 1), Color(0.588235, 0.431373, 0.431373, 1), Color(0.588235, 0.431373, 0.431373, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_g6b74"]
+_data = {
+"RESET": SubResource("Animation_1vks3"),
+"intro": SubResource("Animation_oxdj7")
+}
+
+[node name="Cutscene_Intro" type="Node2D"]
+script = ExtResource("1_e3ycw")
+
+[node name="Fondo" type="Sprite2D" parent="."]
+position = Vector2(-0.500038, -0.999969)
+scale = Vector2(1.25988, 1.12579)
+texture = ExtResource("2_jt24p")
+
+[node name="FondoMarchito" type="Sprite2D" parent="."]
+modulate = Color(0.644345, 0.416447, 0.256943, 0)
+z_index = 2
+position = Vector2(-0.500038, -0.999969)
+scale = Vector2(1.25988, 1.12579)
+texture = ExtResource("2_jt24p")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Texto1" type="Label" parent="UI"]
+modulate = Color(1, 1, 1, 0)
+z_index = 100
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -12.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_u0ajf")
+theme_override_font_sizes/font_size = 24
+text = "Miklo vivía en un bosque lleno de frutas y vida…"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Texto2" type="Label" parent="UI"]
+modulate = Color(1, 1, 1, 0)
+z_index = 100
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -12.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_u0ajf")
+theme_override_font_sizes/font_size = 24
+text = "Hasta que un día todo comenzó a marchitarse…"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Fade" type="ColorRect" parent="UI"]
+modulate = Color(0, 0, 0, 0.00392157)
+z_index = 100
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -641.0
+offset_top = -360.0
+offset_right = 639.0
+offset_bottom = 358.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Anim" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_g6b74")
+}

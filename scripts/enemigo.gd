@@ -1,5 +1,5 @@
 extends Node2D
-const SPEED = 180
+const SPEED = 150
 var direction = 1
 
 @onready var ray_cast_derecha: RayCast2D = $RayCast2DR
@@ -15,7 +15,7 @@ func _process(delta: float) -> void:
 		direction = -1
 	if ray_cast_izquierda.is_colliding():
 		direction = 1
-	
+
 	
 	position.x += direction * SPEED * delta
 	
