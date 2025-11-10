@@ -1,10 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://y4i5dajpr581"]
+[gd_scene load_steps=6 format=3 uid="uid://y4i5dajpr581"]
 
 [ext_resource type="Theme" uid="uid://drgpgr5r6pfp" path="res://resources/UI/tema.tres" id="1_ifiph"]
 [ext_resource type="Script" uid="uid://c5wpc4psfaofm" path="res://scripts/hud_portada.gd" id="1_utke6"]
+[ext_resource type="PackedScene" path="res://scenes/cutscene_intro.tscn" id="2_j50pj"]
+[ext_resource type="AudioStream" uid="uid://byh8f1nkjyh53" path="res://resources/UI/toggle_001.ogg" id="4_qmhoi"]
+[ext_resource type="FontFile" uid="uid://bsgw4b8k1odff" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="5_cf2s1"]
 
 [node name="HUD_Portada" type="CanvasLayer"]
 script = ExtResource("1_utke6")
+escena_a_cargar = ExtResource("2_j50pj")
+audio = ExtResource("4_qmhoi")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchors_preset = 8
@@ -33,6 +38,29 @@ layout_mode = 2
 focus_mode = 0
 theme = ExtResource("1_ifiph")
 text = "Salir"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_qmhoi")
+bus = &"UI"
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -578.0
+offset_top = 93.0
+offset_right = 574.0
+offset_bottom = 157.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 6
+theme_override_fonts/font = ExtResource("5_cf2s1")
+theme_override_font_sizes/font_size = 64
+text = "La aventura de Miklo"
 
 [connection signal="pressed" from="VBoxContainer/BotonComenzar" to="." method="_on_boton_comenzar_pressed"]
 [connection signal="pressed" from="VBoxContainer/BotonSalir" to="." method="_on_boton_salir_pressed"]
