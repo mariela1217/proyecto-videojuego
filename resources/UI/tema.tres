@@ -1,0 +1,28 @@
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://drgpgr5r6pfp"]
+
+[ext_resource type="FontFile" uid="uid://bsgw4b8k1odff" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="1_yu57w"]
+[ext_resource type="StyleBox" uid="uid://yd5yta7ks477" path="res://resources/UI/boton_normal.tres" id="2_h0f8k"]
+[ext_resource type="StyleBox" uid="uid://5yunihqarap" path="res://resources/UI/boton_hover.tres" id="3_vh8ub"]
+[ext_resource type="StyleBox" uid="uid://c56np2nurvrt6" path="res://resources/UI/boton_pressed.tres" id="5_xblcm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dvf3x"]
+bg_color = Color(1, 1, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+shadow_size = 3
+shadow_offset = Vector2(4, 6)
+
+[resource]
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/colors/font_disabled_color = Color(0, 0, 0, 0.5)
+Button/colors/font_hover_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/font_pressed_color = Color(0, 0, 0, 1)
+Button/fonts/font = ExtResource("1_yu57w")
+Button/styles/disabled = SubResource("StyleBoxFlat_dvf3x")
+Button/styles/hover = ExtResource("3_vh8ub")
+Button/styles/normal = ExtResource("2_h0f8k")
+Button/styles/pressed = ExtResource("5_xblcm")
