@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="la_aventura_de_miklo"
-run/main_scene="res://scenes/cutscene_intro.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
+run/main_scene="uid://ctb58ipv2jb7f"
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
@@ -23,6 +23,7 @@ Musica="*res://scenes/musica.tscn"
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
+window/size/mode=3
 window/stretch/mode="canvas_items"
 
 [input]
