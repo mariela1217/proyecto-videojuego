@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dqeh1qipq8587"]
+[gd_scene load_steps=3 format=3 uid="uid://dqeh1qipq8587"]
 
-[ext_resource type="Script" path="res://scripts/zona_de_muerte.gd" id="1_actt3"]
+[ext_resource type="Script" uid="uid://dw4e1u2cewas" path="res://scripts/zona_de_muerte.gd" id="1_actt3"]
+[ext_resource type="AudioStream" uid="uid://dn20vg4gqqw6e" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sounds/hurt.wav" id="2_8bfm1"]
 
 [node name="ZonaDeMuerte" type="Area2D"]
 collision_mask = 2
@@ -9,6 +10,11 @@ script = ExtResource("1_actt3")
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.6
 one_shot = true
+
+[node name="SonidoMuerte" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_8bfm1")
+max_distance = 1e+08
+bus = &"Efectos de sonido"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
