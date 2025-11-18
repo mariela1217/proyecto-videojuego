@@ -1,7 +1,7 @@
 [gd_scene load_steps=38 format=3 uid="uid://crsralbighf5e"]
 
 [ext_resource type="Texture2D" uid="uid://ck1jcxhn8rcvp" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/1-Idle/Idle.png" id="1_3vyb7"]
-[ext_resource type="Script" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="Script" uid="uid://dm1h4jwdcg3h3" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://bd5m8r0jmj30d" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/2-Run/Run.png" id="2_g2els"]
 [ext_resource type="Texture2D" uid="uid://bc38ebpjcyjxo" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/3-Jump/Jump.png" id="3_dqkch"]
 [ext_resource type="AudioStream" uid="uid://dbqooa715i146" path="res://resources/sounds/jump.wav" id="5_0ojqc"]

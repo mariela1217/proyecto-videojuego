@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bokx82pn5ifpp"]
 
-[ext_resource type="Script" path="res://scripts/cutscene_intro.gd" id="1_e3ycw"]
+[ext_resource type="Script" uid="uid://b84j83b0wd6vf" path="res://scripts/cutscene_intro.gd" id="1_e3ycw"]
 [ext_resource type="Texture2D" uid="uid://bv4h5k2gciw8k" path="res://resources/mundoverde.png" id="2_jt24p"]
 [ext_resource type="FontFile" uid="uid://bgxaa3t3khxdy" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="3_u0ajf"]
 
@@ -110,8 +110,8 @@ tracks/3/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_g6b74"]
 _data = {
-"RESET": SubResource("Animation_1vks3"),
-"intro": SubResource("Animation_oxdj7")
+&"RESET": SubResource("Animation_1vks3"),
+&"intro": SubResource("Animation_oxdj7")
 }
 
 [node name="Cutscene_Intro" type="Node2D"]
@@ -183,5 +183,5 @@ color = Color(0, 0, 0, 1)
 
 [node name="Anim" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_g6b74")
+&"": SubResource("AnimationLibrary_g6b74")
 }
