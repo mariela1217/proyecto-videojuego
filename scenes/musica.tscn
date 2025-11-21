@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://b3u1jori0nhr0"]
+[gd_scene load_steps=3 format=3 uid="uid://c0gor1kaqqrpb"]
 
-[ext_resource type="AudioStream" uid="uid://bu83o1s6xilg1" path="res://resources/sounds/time_for_adventure.mp3" id="1_mgkfa"]
+[ext_resource type="AudioStream" uid="uid://c02v7mni4757y" path="res://resources/sounds/time_for_adventure.mp3" id="1_mgkfa"]
+[ext_resource type="Script" uid="uid://dak61ivh232vu" path="res://scripts/musica.gd" id="2_8c2qo"]
 
 [node name="Musica" type="AudioStreamPlayer2D"]
 stream = ExtResource("1_mgkfa")
 autoplay = true
 bus = &"Musica"
+script = ExtResource("2_8c2qo")

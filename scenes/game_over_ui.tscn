@@ -1,0 +1,59 @@
+[gd_scene load_steps=4 format=3 uid="uid://dm35bsri0hs2t"]
+
+[ext_resource type="Script" uid="uid://b3pmea55a3vgb" path="res://scripts/game_over_ui.gd" id="1_lk38d"]
+[ext_resource type="Texture2D" uid="uid://hmq7hcap3l3h" path="res://resources/background.png" id="2_nbgkd"]
+[ext_resource type="Theme" uid="uid://drgpgr5r6pfp" path="res://resources/UI/tema.tres" id="3_cotc0"]
+
+[node name="GameOverUI" type="CanvasLayer"]
+script = ExtResource("1_lk38d")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -126.0
+offset_top = -130.0
+offset_right = 128.0
+offset_bottom = 88.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_nbgkd")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -40.0
+offset_top = 272.0
+offset_right = 45.0
+offset_bottom = 295.0
+grow_horizontal = 2
+text = "Game over"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -103.0
+offset_top = -46.0
+offset_right = 103.0
+offset_bottom = 65.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="Reintentar" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+theme = ExtResource("3_cotc0")
+text = "Reintentar"
+
+[node name="VolverAMenu" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+theme = ExtResource("3_cotc0")
+text = "Volver al menú"

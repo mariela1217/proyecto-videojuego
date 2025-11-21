@@ -2,9 +2,9 @@
 
 [ext_resource type="Theme" uid="uid://drgpgr5r6pfp" path="res://resources/UI/tema.tres" id="1_ifiph"]
 [ext_resource type="Script" uid="uid://c5wpc4psfaofm" path="res://scripts/hud_portada.gd" id="1_utke6"]
-[ext_resource type="PackedScene" path="res://scenes/cutscene_intro.tscn" id="2_j50pj"]
-[ext_resource type="AudioStream" uid="uid://byh8f1nkjyh53" path="res://resources/UI/toggle_001.ogg" id="4_qmhoi"]
-[ext_resource type="FontFile" uid="uid://bsgw4b8k1odff" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="5_cf2s1"]
+[ext_resource type="PackedScene" uid="uid://bokx82pn5ifpp" path="res://scenes/cutscene_intro.tscn" id="2_j50pj"]
+[ext_resource type="AudioStream" uid="uid://cih78yut7h6hd" path="res://resources/UI/toggle_001.ogg" id="4_qmhoi"]
+[ext_resource type="FontFile" uid="uid://d2xo8dv6jowic" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="5_cf2s1"]
 
 [node name="HUD_Portada" type="CanvasLayer"]
 script = ExtResource("1_utke6")

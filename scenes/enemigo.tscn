@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://co6648rf6oa84"]
 
-[ext_resource type="Texture2D" uid="uid://b78wf425tu4l2" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/slime_green.png" id="1_aa2vs"]
-[ext_resource type="Script" path="res://scripts/enemigo.gd" id="1_bmk0d"]
+[ext_resource type="Texture2D" uid="uid://dg6dcmnedtvqg" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/slime_green.png" id="1_aa2vs"]
+[ext_resource type="Script" uid="uid://bn240wwwer20n" path="res://scripts/enemigo.gd" id="1_bmk0d"]
 [ext_resource type="PackedScene" uid="uid://dqeh1qipq8587" path="res://scenes/zona_de_muerte.tscn" id="2_myto4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_35sb7"]
