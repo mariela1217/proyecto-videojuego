@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://dbeojvfbhvun1"]
 
 [ext_resource type="Texture2D" uid="uid://bnr72lovygyqk" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/6-Fruits/Fruit+.png" id="1_ix5g5"]
-[ext_resource type="Script" path="res://scripts/manzana.gd" id="1_yxtbg"]
+[ext_resource type="Script" uid="uid://dvc7gej66em4e" path="res://scripts/manzana.gd" id="1_yxtbg"]
 [ext_resource type="AudioStream" uid="uid://br58n4d1hu72v" path="res://resources/sounds/collect_apple.mp3" id="3_kyfsd"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ridhh"]

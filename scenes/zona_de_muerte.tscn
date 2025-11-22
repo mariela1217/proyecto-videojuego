@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dqeh1qipq8587"]
 
-[ext_resource type="Script" path="res://scripts/zona_de_muerte.gd" id="1_actt3"]
+[ext_resource type="Script" uid="uid://dw4e1u2cewas" path="res://scripts/zona_de_muerte.gd" id="1_actt3"]
 
 [node name="ZonaDeMuerte" type="Area2D"]
 collision_mask = 2

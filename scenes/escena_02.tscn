@@ -1,19 +1,20 @@
-[gd_scene load_steps=29 format=4 uid="uid://x0ajkr4uvwus"]
+[gd_scene load_steps=30 format=4 uid="uid://x0ajkr4uvwus"]
 
-[ext_resource type="Script" uid="uid://b24t0crmco66s" path="res://scripts/game_manager.gd" id="1_klw17"]
-[ext_resource type="FontFile" uid="uid://cxrtn2qaekmpn" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="2_xin6i"]
-[ext_resource type="Texture2D" uid="uid://cs2a0nfqops35" path="res://resources/kenney_pixel-platformer-farm-expansion/Tilemap/tilemap.png" id="3_4vihk"]
-[ext_resource type="Texture2D" uid="uid://v4agib428dw6" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/platforms.png" id="4_mjd7e"]
-[ext_resource type="Texture2D" uid="uid://bjm23th7seotx" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/world_tileset.png" id="5_hkmc1"]
-[ext_resource type="Texture2D" uid="uid://d3qeciqoos0ts" path="res://resources/kenney_pixel-platformer/Tilemap/tilemap-backgrounds_packed.png" id="6_hejsg"]
-[ext_resource type="Texture2D" uid="uid://6tksnrc2pxj1" path="res://resources/kenney_pixel-platformer/Tilemap/tilemap.png" id="7_a8v62"]
+[ext_resource type="Script" uid="uid://choynkmnfgk8f" path="res://scripts/game_manager.gd" id="1_klw17"]
+[ext_resource type="FontFile" uid="uid://dniwlowsb0dyj" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="2_xin6i"]
+[ext_resource type="Texture2D" uid="uid://cblylt67ex5yt" path="res://resources/kenney_pixel-platformer-farm-expansion/Tilemap/tilemap.png" id="3_4vihk"]
+[ext_resource type="Texture2D" uid="uid://bph25xabxoflt" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/platforms.png" id="4_mjd7e"]
+[ext_resource type="Texture2D" uid="uid://c1hpms4ywn4kv" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/world_tileset.png" id="5_hkmc1"]
+[ext_resource type="Texture2D" uid="uid://b6f0ps4qk1j8u" path="res://resources/kenney_pixel-platformer/Tilemap/tilemap-backgrounds_packed.png" id="6_hejsg"]
+[ext_resource type="Texture2D" uid="uid://d3lq6j14beyp4" path="res://resources/kenney_pixel-platformer/Tilemap/tilemap.png" id="7_a8v62"]
 [ext_resource type="PackedScene" uid="uid://co6648rf6oa84" path="res://scenes/enemigo.tscn" id="8_gdkue"]
-[ext_resource type="Texture2D" uid="uid://cw0hexiwif7s3" path="res://resources/kenney_platformer-art-winter/sheet.png" id="8_xin6i"]
+[ext_resource type="Texture2D" uid="uid://pr72814ysf76" path="res://resources/kenney_platformer-art-winter/sheet.png" id="8_xin6i"]
 [ext_resource type="PackedScene" uid="uid://crsralbighf5e" path="res://scenes/player.tscn" id="9_mh2cc"]
 [ext_resource type="PackedScene" uid="uid://dqeh1qipq8587" path="res://scenes/zona_de_muerte.tscn" id="10_m38wj"]
 [ext_resource type="PackedScene" uid="uid://dbeojvfbhvun1" path="res://scenes/manzana.tscn" id="11_585ej"]
 [ext_resource type="PackedScene" uid="uid://c404dmxb422d5" path="res://scenes/plataforma_nv_1.tscn" id="12_wuss3"]
-[ext_resource type="PackedScene" uid="uid://crugayhkbi3sc" path="res://hud.tscn" id="13_m7e7p"]
+[ext_resource type="PackedScene" uid="uid://crugayhkbi3sc" path="res://scenes/hud.tscn" id="13_m7e7p"]
+[ext_resource type="PackedScene" uid="uid://bk2m15wel1hm3" path="res://scenes/meta2.tscn" id="15_4vihk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8p2wb"]
 texture = ExtResource("3_4vihk")
@@ -1660,3 +1661,7 @@ text = "Felicidades Miklo, lo has conseguido!"
 autowrap_mode = 2
 
 [node name="HUD" parent="." instance=ExtResource("13_m7e7p")]
+
+[node name="Meta2" parent="." instance=ExtResource("15_4vihk")]
+position = Vector2(-196, -33.5)
+scale = Vector2(1.75, 1.8125)

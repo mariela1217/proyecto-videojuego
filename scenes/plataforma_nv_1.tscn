@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://c404dmxb422d5"]
 
-[ext_resource type="Texture2D" uid="uid://v4agib428dw6" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/platforms.png" id="1_7ng70"]
+[ext_resource type="Texture2D" uid="uid://bph25xabxoflt" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/platforms.png" id="1_7ng70"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2aw73"]
 size = Vector2(30, 8)

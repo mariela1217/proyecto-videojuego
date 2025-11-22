@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://dm313mb6h6wud"]
+
+[ext_resource type="Texture2D" uid="uid://cjpiebs2kka6r" path="res://resources/Meta.png" id="1_ekon5"]
+[ext_resource type="Script" uid="uid://ca7pj3bd8t2yo" path="res://scripts/meta_3.gd" id="2_ekon5"]
+[ext_resource type="AudioStream" uid="uid://wv3imohub62k" path="res://resources/sounds/meta.wav" id="3_bwpa4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_keyex"]
+size = Vector2(16, 11)
+
+[node name="Meta3" type="Sprite2D"]
+texture = ExtResource("1_ekon5")
+script = ExtResource("2_ekon5")
+musica_final_nivel = ExtResource("3_bwpa4")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_keyex")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
