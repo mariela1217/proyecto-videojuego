@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dm35bsri0hs2t"]
 
 [ext_resource type="Script" uid="uid://b3pmea55a3vgb" path="res://scripts/game_over_ui.gd" id="1_lk38d"]
-[ext_resource type="Texture2D" uid="uid://hmq7hcap3l3h" path="res://resources/background.png" id="2_nbgkd"]
+[ext_resource type="Texture2D" uid="uid://cgu44upg8egqh" path="res://resources/background.png" id="2_nbgkd"]
 [ext_resource type="Theme" uid="uid://drgpgr5r6pfp" path="res://resources/UI/tema.tres" id="3_cotc0"]
 
 [node name="GameOverUI" type="CanvasLayer"]
@@ -44,6 +44,7 @@ offset_right = 103.0
 offset_bottom = 65.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 0
 theme_override_constants/separation = 10
 
 [node name="Reintentar" type="Button" parent="VBoxContainer"]

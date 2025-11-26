@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://co6648rf6oa84"]
 
-[ext_resource type="Texture2D" uid="uid://dg6dcmnedtvqg" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/slime_green.png" id="1_aa2vs"]
+[ext_resource type="Texture2D" uid="uid://0ecvxm51kb6p" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/slime_green.png" id="1_aa2vs"]
 [ext_resource type="Script" uid="uid://bn240wwwer20n" path="res://scripts/enemigo.gd" id="1_bmk0d"]
 [ext_resource type="PackedScene" uid="uid://dqeh1qipq8587" path="res://scenes/zona_de_muerte.tscn" id="2_myto4"]
 
@@ -51,9 +51,9 @@ position = Vector2(-1, -8)
 scale = Vector2(1.58333, 1.54167)
 sprite_frames = SubResource("SpriteFrames_n1s7r")
 autoplay = "default"
-frame_progress = 0.925152
+frame_progress = 0.848814
 
-[node name="ZonaDeMuerte" parent="." instance=ExtResource("2_myto4")]
+[node name="ZonaDeMuerte" parent="." groups=["enemigo"] instance=ExtResource("2_myto4")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaDeMuerte"]
 position = Vector2(-1, 1)

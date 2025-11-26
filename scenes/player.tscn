@@ -1,11 +1,49 @@
-[gd_scene load_steps=39 format=3 uid="uid://crsralbighf5e"]
+[gd_scene load_steps=50 format=3 uid="uid://crsralbighf5e"]
 
-[ext_resource type="Texture2D" uid="uid://c2v04powxkbaw" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/1-Idle/Idle.png" id="1_3vyb7"]
+[ext_resource type="Texture2D" uid="uid://fuykahhti5sw" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/1-Idle/Idle.png" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://dm1h4jwdcg3h3" path="res://scripts/player.gd" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://dtvlxi6edgchq" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/2-Run/Run.png" id="2_g2els"]
-[ext_resource type="Texture2D" uid="uid://c0v5l4w6dp7hl" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/3-Jump/Jump.png" id="3_dqkch"]
-[ext_resource type="AudioStream" uid="uid://dl5xmqaw571am" path="res://resources/sounds/jump.wav" id="5_0ojqc"]
+[ext_resource type="Texture2D" uid="uid://d1uekuxq3u53" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/2-Run/Run.png" id="2_g2els"]
+[ext_resource type="Texture2D" uid="uid://dk7xjjkj5aqr1" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/4-Hit/Hit.png" id="2_smehm"]
+[ext_resource type="Texture2D" uid="uid://cs1c30fqidte3" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/3-Jump/Jump.png" id="3_dqkch"]
+[ext_resource type="Texture2D" uid="uid://dgjnfa2w8q3b2" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/5-Dead/Dead.png" id="3_ur7pv"]
+[ext_resource type="AudioStream" uid="uid://bj20jo85i0n4r" path="res://resources/sounds/jump.wav" id="5_0ojqc"]
 [ext_resource type="Script" uid="uid://gdq31tpd87pi" path="res://scripts/procesar_llegar_a_final_del_nivel.gd" id="6_tuyoq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_giy8y"]
+atlas = ExtResource("2_smehm")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fdfoy"]
+atlas = ExtResource("2_smehm")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bj30b"]
+atlas = ExtResource("2_smehm")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jc3p3"]
+atlas = ExtResource("2_smehm")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hax0n"]
+atlas = ExtResource("2_smehm")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t4otl"]
+atlas = ExtResource("3_ur7pv")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j2b1d"]
+atlas = ExtResource("3_ur7pv")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cs1tg"]
+atlas = ExtResource("3_ur7pv")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2dvfe"]
+atlas = ExtResource("3_ur7pv")
+region = Rect2(128, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qlg0r"]
 atlas = ExtResource("1_3vyb7")
@@ -129,10 +167,47 @@ region = Rect2(224, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_bj30b"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_giy8y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fdfoy")
+}],
+"loop": true,
+"name": &"death",
+"speed": 5.0
+}, {
 "frames": [],
 "loop": true,
 "name": &"default",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bj30b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jc3p3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hax0n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t4otl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j2b1d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cs1tg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2dvfe")
+}],
+"loop": false,
+"name": &"hit",
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -251,7 +326,8 @@ script = ExtResource("1_g2els")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_bj30b")
-animation = &"idle"
+animation = &"death"
+frame_progress = 0.0702065
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, -13)
