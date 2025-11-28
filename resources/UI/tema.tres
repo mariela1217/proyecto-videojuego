@@ -1,6 +1,6 @@
 [gd_resource type="Theme" load_steps=6 format=3 uid="uid://drgpgr5r6pfp"]
 
-[ext_resource type="FontFile" uid="uid://bsgw4b8k1odff" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="1_yu57w"]
+[ext_resource type="FontFile" uid="uid://bfrpg3g27tfap" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="1_yu57w"]
 [ext_resource type="StyleBox" uid="uid://yd5yta7ks477" path="res://resources/UI/boton_normal.tres" id="2_h0f8k"]
 [ext_resource type="StyleBox" uid="uid://5yunihqarap" path="res://resources/UI/boton_hover.tres" id="3_vh8ub"]
 [ext_resource type="StyleBox" uid="uid://c56np2nurvrt6" path="res://resources/UI/boton_pressed.tres" id="5_xblcm"]

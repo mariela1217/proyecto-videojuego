@@ -1,10 +1,10 @@
 [gd_scene load_steps=14 format=4 uid="uid://ctb58ipv2jb7f"]
 
 [ext_resource type="PackedScene" uid="uid://y4i5dajpr581" path="res://scenes/hud_portada.tscn" id="1_qrquy"]
-[ext_resource type="Texture2D" uid="uid://b6caa7pq6uf0u" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/1-Idle/Idle.png" id="2_c0004"]
-[ext_resource type="Texture2D" uid="uid://bk747brsj2y3m" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/world_tileset.png" id="3_8dgn0"]
-[ext_resource type="Texture2D" uid="uid://du426o6u8iph3" path="res://resources/Jungle Monkey Platformer/1-Sprites/Platforms and Decor/Platforms.png" id="3_vjd70"]
-[ext_resource type="Texture2D" uid="uid://dm8qg7120j8js" path="res://resources/image - 2025-04-12T091805.890.png" id="5_i4sdw"]
+[ext_resource type="Texture2D" uid="uid://el2y4w1gfvso" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/1-Idle/Idle.png" id="2_c0004"]
+[ext_resource type="Texture2D" uid="uid://cs7hvbhyvygtk" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/world_tileset.png" id="3_8dgn0"]
+[ext_resource type="Texture2D" uid="uid://yq6vytih67oq" path="res://resources/Jungle Monkey Platformer/1-Sprites/Platforms and Decor/Platforms.png" id="3_vjd70"]
+[ext_resource type="Texture2D" uid="uid://dy4xg868yrwf3" path="res://resources/image - 2025-04-12T091805.890.png" id="5_i4sdw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i4sdw"]
 texture = ExtResource("3_8dgn0")

@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://yx2l6ngc188i"]
+
+[ext_resource type="VideoStream" uid="uid://vq6o8ako255q" path="res://Cinematica/Presentación1.ogv" id="1_irl1m"]
+
+[sub_resource type="GDScript" id="GDScript_eiuhb"]
+script/source = "extends VideoStreamPlayer
+
+func _ready():
+	# el video ya se reproduce solo por Autoplay
+	connect(\"finished\", Callable(self, \"_on_video_finished\"))
+
+func _on_video_finished():
+	get_tree().change_scene_to_file(\"res://scenes/escena_02.tscn\")
+"
+
+[node name="Video1" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+offset_top = 33.0
+offset_right = 1280.0
+offset_bottom = 708.0
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Panel"]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+scale = Vector2(0.667, 0.667)
+stream = ExtResource("1_irl1m")
+autoplay = true
+script = SubResource("GDScript_eiuhb")

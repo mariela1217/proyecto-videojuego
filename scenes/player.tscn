@@ -1,13 +1,13 @@
 [gd_scene load_steps=50 format=3 uid="uid://crsralbighf5e"]
 
-[ext_resource type="Texture2D" uid="uid://fuykahhti5sw" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/1-Idle/Idle.png" id="1_3vyb7"]
+[ext_resource type="Texture2D" uid="uid://el2y4w1gfvso" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/1-Idle/Idle.png" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://dm1h4jwdcg3h3" path="res://scripts/player.gd" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://d1uekuxq3u53" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/2-Run/Run.png" id="2_g2els"]
-[ext_resource type="Texture2D" uid="uid://dk7xjjkj5aqr1" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/4-Hit/Hit.png" id="2_smehm"]
-[ext_resource type="Texture2D" uid="uid://cs1c30fqidte3" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/3-Jump/Jump.png" id="3_dqkch"]
-[ext_resource type="Texture2D" uid="uid://dgjnfa2w8q3b2" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/5-Dead/Dead.png" id="3_ur7pv"]
-[ext_resource type="AudioStream" uid="uid://bj20jo85i0n4r" path="res://resources/sounds/jump.wav" id="5_0ojqc"]
-[ext_resource type="Script" uid="uid://gdq31tpd87pi" path="res://scripts/procesar_llegar_a_final_del_nivel.gd" id="6_tuyoq"]
+[ext_resource type="Texture2D" uid="uid://dhxjsq62pnn1a" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/2-Run/Run.png" id="2_g2els"]
+[ext_resource type="Texture2D" uid="uid://bu4iplcyx1qah" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/4-Hit/Hit.png" id="2_smehm"]
+[ext_resource type="Texture2D" uid="uid://b8ewoggxnrh01" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/3-Jump/Jump.png" id="3_dqkch"]
+[ext_resource type="Texture2D" uid="uid://vj77dejdlr5j" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/5-Dead/Dead.png" id="3_ur7pv"]
+[ext_resource type="AudioStream" uid="uid://cbsa8pfwatb2h" path="res://resources/sounds/jump.wav" id="5_0ojqc"]
+[ext_resource type="Script" path="res://scripts/procesar_llegar_a_final_del_nivel.gd" id="6_tuyoq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_giy8y"]
 atlas = ExtResource("2_smehm")

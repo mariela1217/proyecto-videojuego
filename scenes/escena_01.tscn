@@ -3,16 +3,16 @@
 [ext_resource type="Script" uid="uid://g4d0gnt1cmii" path="res://scenes/escena_01.gd" id="1_e51oy"]
 [ext_resource type="Script" uid="uid://b24t0crmco66s" path="res://scripts/game_manager.gd" id="1_gtexo"]
 [ext_resource type="PackedScene" uid="uid://crsralbighf5e" path="res://scenes/player.tscn" id="1_ogd80"]
-[ext_resource type="Texture2D" uid="uid://c4xbaxxl8pngl" path="res://resources/kenney_pixel-platformer-farm-expansion/Tilemap/tilemap.png" id="2_smpog"]
-[ext_resource type="Texture2D" uid="uid://cd8k4716akvix" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/platforms.png" id="3_wiu8i"]
+[ext_resource type="Texture2D" uid="uid://cnqhhsdcsdlpn" path="res://resources/kenney_pixel-platformer-farm-expansion/Tilemap/tilemap.png" id="2_smpog"]
+[ext_resource type="Texture2D" uid="uid://bj7wi1wpynsdl" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/platforms.png" id="3_wiu8i"]
 [ext_resource type="PackedScene" uid="uid://co6648rf6oa84" path="res://scenes/enemigo.tscn" id="4_32x25"]
-[ext_resource type="Texture2D" uid="uid://bk747brsj2y3m" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/world_tileset.png" id="4_xvnon"]
+[ext_resource type="Texture2D" uid="uid://cs7hvbhyvygtk" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/sprites/world_tileset.png" id="4_xvnon"]
 [ext_resource type="PackedScene" uid="uid://c404dmxb422d5" path="res://scenes/plataforma_nv_1.tscn" id="5_dgv6l"]
-[ext_resource type="Texture2D" uid="uid://c8ans8nmabsiy" path="res://resources/kenney_pixel-platformer/Tilemap/tilemap.png" id="6_no60p"]
+[ext_resource type="Texture2D" uid="uid://b4dsrtotr5t5u" path="res://resources/kenney_pixel-platformer/Tilemap/tilemap.png" id="6_no60p"]
 [ext_resource type="PackedScene" uid="uid://dbeojvfbhvun1" path="res://scenes/manzana.tscn" id="6_r61a7"]
-[ext_resource type="Texture2D" uid="uid://1llmyfl5u2wf" path="res://resources/kenney_pixel-platformer/Tilemap/tilemap-backgrounds_packed.png" id="6_vk344"]
+[ext_resource type="Texture2D" uid="uid://c3nrgoee2bgry" path="res://resources/kenney_pixel-platformer/Tilemap/tilemap-backgrounds_packed.png" id="6_vk344"]
 [ext_resource type="PackedScene" uid="uid://dqeh1qipq8587" path="res://scenes/zona_de_muerte.tscn" id="7_od6io"]
-[ext_resource type="FontFile" uid="uid://ep6vheb5hprv" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="9_03ud0"]
+[ext_resource type="FontFile" uid="uid://d1ushxpuyg4jy" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="9_03ud0"]
 [ext_resource type="PackedScene" uid="uid://crugayhkbi3sc" path="res://scenes/hud.tscn" id="9_sj5uf"]
 [ext_resource type="PackedScene" uid="uid://cjbl1bsuht1i2" path="res://scenes/meta.tscn" id="14_uthfp"]
 
@@ -859,43 +859,25 @@ position = Vector2(1224, -58)
 position = Vector2(1021, -97)
 
 [node name="Manzana5" parent="Manzanas" instance=ExtResource("6_r61a7")]
-position = Vector2(1902, -15)
+position = Vector2(1709, 19)
 
 [node name="Manzana18" parent="Manzanas" instance=ExtResource("6_r61a7")]
 position = Vector2(1549, 43)
 
 [node name="Manzana19" parent="Manzanas" instance=ExtResource("6_r61a7")]
-position = Vector2(1514, 43)
-
-[node name="Manzana20" parent="Manzanas" instance=ExtResource("6_r61a7")]
-position = Vector2(1480, 43)
-
-[node name="Manzana21" parent="Manzanas" instance=ExtResource("6_r61a7")]
-position = Vector2(1446, 43)
+position = Vector2(1459, 59)
 
 [node name="Manzana22" parent="Manzanas" instance=ExtResource("6_r61a7")]
 position = Vector2(1562, -63)
 
 [node name="Manzana6" parent="Manzanas" instance=ExtResource("6_r61a7")]
-position = Vector2(1816, -11)
+position = Vector2(1816, -18)
 
 [node name="Manzana23" parent="Manzanas" instance=ExtResource("6_r61a7")]
-position = Vector2(1864, -35)
+position = Vector2(1480, -9)
 
 [node name="Manzana24" parent="Manzanas" instance=ExtResource("6_r61a7")]
 position = Vector2(1876, -10)
-
-[node name="Manzana25" parent="Manzanas" instance=ExtResource("6_r61a7")]
-position = Vector2(1876, -10)
-
-[node name="Manzana26" parent="Manzanas" instance=ExtResource("6_r61a7")]
-position = Vector2(1891, -41)
-
-[node name="Manzana27" parent="Manzanas" instance=ExtResource("6_r61a7")]
-position = Vector2(1923, -39)
-
-[node name="Manzana28" parent="Manzanas" instance=ExtResource("6_r61a7")]
-position = Vector2(1844, -15)
 
 [node name="Plataformas" type="Node2D" parent="."]
 
@@ -1010,7 +992,7 @@ autowrap_mode = 2
 [node name="HUD" parent="." instance=ExtResource("9_sj5uf")]
 
 [node name="Meta" parent="." instance=ExtResource("14_uthfp")]
-position = Vector2(1926, 2)
+position = Vector2(1922, 2)
 scale = Vector2(1.375, 1.5625)
 
 [node name="Enemigo" parent="." instance=ExtResource("4_32x25")]
@@ -1020,4 +1002,4 @@ position = Vector2(192, -12)
 position = Vector2(120, -12)
 
 [node name="Enemigo3" parent="." instance=ExtResource("4_32x25")]
-position = Vector2(1496, 67)
+position = Vector2(1491, 70)

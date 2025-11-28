@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://crugayhkbi3sc"]
 
-[ext_resource type="Script" uid="uid://cpnv1hjxmuycw" path="res://scripts/hud.gd" id="1_hg0nr"]
-[ext_resource type="Texture2D" uid="uid://bnr72lovygyqk" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/6-Fruits/Fruit+.png" id="1_qqmhj"]
-[ext_resource type="FontFile" uid="uid://d2xo8dv6jowic" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="2_rvqwg"]
+[ext_resource type="Script" uid="uid://cvuahxxaj3u3a" path="res://scripts/hud.gd" id="1_hg0nr"]
+[ext_resource type="Texture2D" uid="uid://dygjyu7vrl1ln" path="res://resources/Jungle Monkey Platformer/1-Sprites/Character Spritesheets/6-Fruits/Fruit+.png" id="1_qqmhj"]
+[ext_resource type="FontFile" uid="uid://bfrpg3g27tfap" path="res://resources/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="2_rvqwg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_36lh6"]
 atlas = ExtResource("1_qqmhj")
