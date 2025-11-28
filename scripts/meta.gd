@@ -16,4 +16,4 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	if musica_final_nivel:
 		await Musica.finished
 		
-	get_tree().change_scene_to_file("res://scenes/escena_02.tscn")
+	get_tree().change_scene_to_file("res://scenes/video1.tscn")

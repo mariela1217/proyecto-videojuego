@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://vi8vbb66yt7h"]
+
+[ext_resource type="VideoStream" uid="uid://cwntpgtcp7rs3" path="res://Cinematica/Presentación3.ogv" id="1_sq3aq"]
+[ext_resource type="Script" uid="uid://cps7gisho7dtx" path="res://scripts/video3.gd" id="2_yyqga"]
+
+[node name="Video3" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1929.0
+offset_bottom = 1068.0
+scale = Vector2(0.666, 0.666)
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Panel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+stream = ExtResource("1_sq3aq")
+autoplay = true
+script = ExtResource("2_yyqga")

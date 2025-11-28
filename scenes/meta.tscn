@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://cjbl1bsuht1i2"]
 
-[ext_resource type="Texture2D" uid="uid://cjpiebs2kka6r" path="res://resources/Meta.png" id="1_omeyu"]
+[ext_resource type="Texture2D" uid="uid://buw67vd08w341" path="res://resources/Meta.png" id="1_omeyu"]
 [ext_resource type="Script" uid="uid://dto5ecsp78s70" path="res://scripts/meta.gd" id="2_keyex"]
-[ext_resource type="AudioStream" uid="uid://wv3imohub62k" path="res://resources/sounds/meta.wav" id="3_2e5v5"]
+[ext_resource type="AudioStream" uid="uid://bsvd36x0rp4q4" path="res://resources/sounds/meta.wav" id="3_2e5v5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_keyex"]
 size = Vector2(16, 11)
